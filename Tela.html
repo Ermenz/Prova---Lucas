@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Portal de informações sobre viagens</title>
+</head>
+
+<body>
+    <h1> Portal de Informações sobre viagens.  </h1>
+
+        <p>Deseja saber mais sobre os destinos? <a href="#">Clique aqui para ir à seção de destinos.</a></p>
+
+</p>Para reservar as passagens, visite nosso parceiro <a href=""# >Expedia.</a></p>
+  
+<h2> Calendário de promoções</h2>
+
+<table class="tabela">
+    <tr>
+    <th>Mês</th>
+    <th>Promoção</th>
+    <th>Desconto</th>
+    </tr>
+    <tr>
+    <td>Janeiro</td>
+    <td>Promoção de Verão</td>
+    <td>30%</td>
+    </tr>
+    <tr>
+    <td>Julho</td>
+    <td>Promoção de inverno</td>
+    <td>25%</td>
+    </tr>
+    <tr>
+    <td>Dezembro</td>
+    <td>Fim de ano</td>
+    <td>40%</td>
+    </tr>
+    </table>
+
+    <style>
+        th{
+            background-color:gray
+        }
+        .tabela, th, td{
+            border-collapse:collapse;
+            padding: 15px;
+            text-align: left;
+            border: 1px solid rgb(160 160 160);
+        }
+    </style>
+</table>
+
+
+<h1> Imagens do destino </h1>
+
+<figure>
+
+
+<img class="nome-logo" src="Praia.webp" alt="nome-logo" aria-placeholder="Um dos destinos mais procurados">
+<figcaption>Praia tropical - um dos destinos mais procurados</figcaption>
+</figure>
+<figure>
+
+
+
+<img class="nome-logo" src="Denali-1.jpg" alt="nome-logo" aria-placeholder="Um dos destinos mais procurados">
+<figcaption>Montanhas nevadas - ideal para amantes no frio</figcaption>
+</figure>
+
+
+<h1> Destinos Populares</h1>
+
+<li><Strong>Rio de Janeiro</Strong></li>
+
+<blockquote>
+    Cidade famosa por suas praias, como Copacabana e Ipanema, e pelo Cristo Redentor.
+</blockquote>
+
+<li><Strong>Paris</Strong></li>
+
+
+<blockquote>
+    Capital França, conhecida pela Torre Eiffel, museus e gastronomia refinada.
+</blockquote>
+
+<li><Strong>Nova Iorque</Strong></li>
+
+
+<blockquote>
+   Cidade vibrante nos Eua, famosa por sua vida cultural, Times Square e a Estátua da Liberdade.
+</blockquote>
+
+
+
+
+<h1> Entre em Contato</h1>
+
+
+<label for="nomeUsuario">Nome Completo:</label> 
+<br>
+<input id="nomeUsuario" type="text">
+<br><br>
+
+<label for="email">Email:</label> 
+<br>
+<input id="email" type="text">
+<br><br>
+
+
+<label for="destino">Destino Preferido:</label> <br>
+<select id="destino" name="destino">
+<option value="rio">Rio De Janeiro</option>
+<option value="paris">Paris</option>
+<option value="nova">Nova Iorque</option>
+</select><br><br>
+  
+
+
+<label for="usuarioMensagem">Sua Mensagem:</label> 
+<br>
+<input id="usuarioMensagem" type="text">
+<br><br>
+
+
+<Style>
+#UsuarioMensagem{
+    padding: 25px;
+}
+</Style>
+
+<button onclick="alert()">Enviar</button>
+
+
+</p><a href="http://127.0.0.1:5500/Tela.html" >Voltar ao topo.</a></p>
+
+
+<script>
+    function alerta(){
+        var nome = document.getElementById("nomeUsuario").value;
+        var email = document.getElementById("email").value;
+        var mensagem = document.getElementById("usuarioMensagem").value;
+        
+       
+        if(nome === "" || email === "" || mensagem === "") {
+            alert("Por favor, preencha os campos!");
+        } else { 
+            alert("Enviado com sucesso!");
+        }
+    }
+    </script>
+    
+
+</body>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+
+</head>
+<body>
+    <h1>Perfil do Usuário Dinânmico</h1>
+    <br>
+    <h2>Entre em Contato</h2>
+
+    <label for="nomeUsuario">Seu Nome: </label>
+    <br>
+    <input id="nomeUsuario" type="text">
+
+    
+    <br><br> 
+    <label for="emailUsuario">Seu E-mail: </label>
+    <br>
+    <input id="emailUsuario" type="text">
+    
+    <br><br>
+    <label for="mensagemUsuario">Sua Mensagem: </label>
+    <br>
+    <div>
+    <input id="mensagemUsuario" type="text">
+    </div>
+    <br><br>
+
+    <button onclick="mostrarNaTela()">Enviar Mensagem</button>
+
+    <br><br>
+
+    <h2>Dados Armazenados</h2>
+
+    <p id="mostrarNaTelaNome">Nome: </p> 
+    <p id="mostrarNaTelaEmail">E-mail: </p> 
+    <p id="mostrarNaTelaMensagem">Mensagem: </p>
+    
+    <script>
+        function mostrarNaTela(){
+        const valorNome = document.getElementById ("nomeUsuario").value;
+        const valorEmail = document.getElementById ("emailUsuario").value;
+        const valorMensagem = document.getElementById ("mensagemUsuario").value;
+
+        document.getElementById ("mostrarNaTelaNome").innerText = 'Nome: ' + valorNome;
+        document.getElementById ("mostrarNaTelaEmail").innerText = 'E-mail: ' + valorEmail;
+        document.getElementById ("mostrarNaTelaMensagem").innerText = 'Mensagem: ' + valorMensagem;
+        }
+    </script>
+
+    <style>
+        #mensagemUsuario{
+            padding: 25px;
+        }
+    </style>
+
+</body>
+</html>
